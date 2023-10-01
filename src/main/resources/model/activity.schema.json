@@ -1,0 +1,16 @@
+{
+  "title": "Activity",
+  "type": "object",
+  "properties": {
+    "tradeReference": {
+      "type": "string"
+    },
+    "accountName": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    }
+  },
+  "required": ["tradeReference", "accountName", "price" ]
+}

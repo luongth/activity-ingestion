@@ -1,0 +1,15 @@
+inbound:
+  filename:
+    regex: 'ACTIVITY_(20\d{2})(\d\d)(\d\d)_(\d\d).txt'
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+inbound:
+  staging:
+    path: ./inbound
+  processed:
+    path: ./processed
+  failed:
+    path: ./failed
